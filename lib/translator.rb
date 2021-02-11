@@ -4,8 +4,15 @@ def load_library(file)
   return YAML.load_file(file)
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(file, name)
+  
+  emoticons = load_library(file)
+  
+  emoticons.each do |text, arr|
+    if(arr[0] == name)
+      return text
+    end
+  end
 end
 
 def get_english_meaning(file, name)
