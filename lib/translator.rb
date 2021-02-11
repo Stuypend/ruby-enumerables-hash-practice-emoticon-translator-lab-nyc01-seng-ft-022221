@@ -44,10 +44,9 @@ def get_english_meaning(file, name)
       return text
     end
   end
-    
-  
+
+
 end
 
 puts get_english_meaning("./lib/emoticons.yml", "(Ｔ▽Ｔ)")
 puts get_english_meaning("./lib/emoticons.yml", "☜(⌒▽⌒)☞")
-
