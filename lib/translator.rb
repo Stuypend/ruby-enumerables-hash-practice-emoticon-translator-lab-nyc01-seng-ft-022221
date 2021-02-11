@@ -1,4 +1,4 @@
-require yaml
+require "yaml"
 
 def load_library(file)
   return YAML.load_file(file)
