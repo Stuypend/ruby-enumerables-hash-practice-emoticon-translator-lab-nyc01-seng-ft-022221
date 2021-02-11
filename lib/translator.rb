@@ -5,9 +5,9 @@ def load_library(file)
 end
 
 def get_japanese_emoticon(file, name)
-  
+
   emoticons = load_library(file)
-  
+
   emoticons.each do |text, arr|
     if(arr[0] == name)
       return text
