@@ -51,7 +51,7 @@ def get_english_meaning(file, name)
       return text
     end
   end
-
+  return "sorry not found"
 
 end
 
